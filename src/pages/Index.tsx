@@ -88,8 +88,8 @@ const PolicyForesightLanding = () => {
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
-      title: "ERAF-AHP-Game Theory",
-      description: "Professional methodology combining Environmental Risk Assessment Framework with Analytical Hierarchy Process"
+      title: "Multi-Criteria Decision Analysis",
+      description: "Advanced methodology integrating system thinking, game theory, and structured decision-making frameworks"
     },
     {
       icon: <Globe className="w-8 h-8" />,
@@ -111,28 +111,28 @@ const PolicyForesightLanding = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-700/10 to-slate-600/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
-            <div className="inline-flex items-center bg-purple-500/10 border border-purple-500/20 rounded-full px-6 py-2 mb-8">
-              <Sparkles className="w-4 h-4 mr-2 text-purple-400" />
-              <span className="text-sm font-medium text-purple-300">Advanced Policy Scenario Planning</span>
+            <div className="inline-flex items-center bg-slate-600/10 border border-slate-500/20 rounded-full px-6 py-2 mb-8">
+              <Sparkles className="w-4 h-4 mr-2 text-slate-400" />
+              <span className="text-sm font-medium text-slate-300">Advanced Policy Scenario Planning</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent">
               Policy Foresight
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-              Generate strategic policy insights using AI-powered ERAF-AHP-Game Theory methodology. 
+              Generate strategic policy insights using system thinking and multi-criteria decision analysis. 
               Transform complex policy challenges into actionable intelligence.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-8 py-4 rounded-lg font-semibold flex items-center justify-center transition-all transform hover:scale-105">
+              <button className="bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 px-8 py-4 rounded-lg font-semibold flex items-center justify-center transition-all transform hover:scale-105">
                 <Play className="w-5 h-5 mr-2" />
                 Try Interactive Demo
               </button>
@@ -174,7 +174,7 @@ const PolicyForesightLanding = () => {
                   onClick={() => setActiveTab(key)}
                   className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all ${
                     activeTab === key 
-                      ? 'bg-purple-600 text-white' 
+                      ? 'bg-slate-600 text-white' 
                       : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
                   }`}
                 >
@@ -209,7 +209,7 @@ const PolicyForesightLanding = () => {
                       cy="100" 
                       r="80" 
                       fill="none" 
-                      stroke="rgb(147, 51, 234)"
+                      stroke="rgb(100, 116, 139)"
                       strokeWidth="20"
                       strokeLinecap="round"
                       strokeDasharray={`${2 * Math.PI * 80 * parseFloat(scenarios[activeTab].probability) / 100} ${2 * Math.PI * 80}`}
@@ -239,8 +239,8 @@ const PolicyForesightLanding = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700 hover:border-purple-500 transition-all group">
-                <div className="text-purple-400 mb-4 group-hover:scale-110 transition-transform">
+              <div key={index} className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700 hover:border-slate-500 transition-all group">
+                <div className="text-slate-400 mb-4 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
@@ -256,15 +256,15 @@ const PolicyForesightLanding = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6">ERAF-AHP-Game Theory Framework</h2>
+              <h2 className="text-4xl font-bold mb-6">System Thinking & Game Theory Framework</h2>
               <p className="text-xl text-gray-300 mb-8">
-                Our proprietary methodology combines Environmental Risk Assessment Framework (ERAF), 
-                Analytical Hierarchy Process (AHP), and Game Theory to deliver comprehensive policy analysis.
+                Our comprehensive methodology combines system thinking, game theory, and multi-criteria 
+                decision analysis to deliver strategic policy insights.
               </p>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">1</div>
+                  <div className="bg-slate-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">1</div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Comprehensive Research Phase</h3>
                     <p className="text-gray-400">AI-powered web research gathering evidence from credible sources including government ministries, regulators, and international organizations.</p>
@@ -272,7 +272,7 @@ const PolicyForesightLanding = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">2</div>
+                  <div className="bg-slate-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">2</div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Multi-Scenario Generation</h3>
                     <p className="text-gray-400">Generate four distinct probability-weighted scenarios from Probable (&gt;50%) to Black Swan (&lt;1%) events with detailed analysis.</p>
@@ -280,7 +280,7 @@ const PolicyForesightLanding = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">3</div>
+                  <div className="bg-slate-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4">3</div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Strategic Intelligence</h3>
                     <p className="text-gray-400">Detailed analysis of key turning points, coalition shifts, and feedback loops for comprehensive policy understanding.</p>
@@ -290,7 +290,7 @@ const PolicyForesightLanding = () => {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-2xl p-8 border border-purple-500/20">
+              <div className="bg-gradient-to-br from-slate-600/20 to-slate-700/20 rounded-2xl p-8 border border-slate-500/20">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold mb-4">Analysis Framework</h3>
                 </div>
@@ -311,8 +311,8 @@ const PolicyForesightLanding = () => {
                   </div>
                   
                   <div className="text-center">
-                    <div className="bg-purple-500/20 border border-purple-500/30 rounded-lg p-4 mb-2">
-                      <Shield className="w-8 h-8 text-purple-400 mx-auto" />
+                    <div className="bg-slate-500/20 border border-slate-500/30 rounded-lg p-4 mb-2">
+                      <Shield className="w-8 h-8 text-slate-400 mx-auto" />
                     </div>
                     <div className="text-sm text-gray-300">Risk Assessment</div>
                   </div>
@@ -332,14 +332,14 @@ const PolicyForesightLanding = () => {
 
       {/* CTA Section */}
       <div className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-blue-600/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-600/5 to-slate-700/5"></div>
         <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-4">Ready to Transform Policy Analysis?</h2>
           <p className="text-xl text-gray-300 mb-8">
             Experience the future of strategic policy planning with AI-powered scenario analysis
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-8 py-4 rounded-lg font-semibold flex items-center justify-center transition-all transform hover:scale-105">
+            <button className="bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 px-8 py-4 rounded-lg font-semibold flex items-center justify-center transition-all transform hover:scale-105">
               <Play className="w-5 h-5 mr-2" />
               Launch Demo Now
             </button>
